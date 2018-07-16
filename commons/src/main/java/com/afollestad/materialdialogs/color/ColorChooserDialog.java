@@ -1,6 +1,7 @@
 package com.afollestad.materialdialogs.color;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.support.v7.app.AppCompatDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -281,7 +282,7 @@ public class ColorChooserDialog extends DialogFragment
   }
 
   @Override
-  public AppCompatDialog onCreateDialog(Bundle savedInstanceState) {
+  public Dialog onCreateDialog(Bundle savedInstanceState) {
     if (getArguments() == null || !getArguments().containsKey("builder")) {
       throw new IllegalStateException(
           "ColorChooserDialog should be created using its Builder interface.");
