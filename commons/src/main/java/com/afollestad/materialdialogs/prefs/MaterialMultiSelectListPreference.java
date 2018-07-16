@@ -164,7 +164,7 @@ public class MaterialMultiSelectListPreference extends MultiSelectListPreference
   @Override
   protected Parcelable onSaveInstanceState() {
     final Parcelable superState = super.onSaveInstanceState();
-      Dialog dialog = getDialog();
+    Dialog dialog = getDialog();
     if (dialog == null || !dialog.isShowing()) {
       return superState;
     }
