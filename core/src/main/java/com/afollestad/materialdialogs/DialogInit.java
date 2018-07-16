@@ -14,6 +14,7 @@ import android.text.method.PasswordTransformationMethod;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -227,6 +228,8 @@ class DialogInit {
       } else {
         dialog.title.setText(builder.title);
         dialog.titleFrame.setVisibility(View.VISIBLE);
+//        dialog.titleFrame.setVisibility(View.GONE);
+//        dialog.setTitle(builder.title);
       }
     }
 
@@ -402,6 +405,7 @@ class DialogInit {
 
     // Other internal initialization
     dialog.invalidateList();
+//    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //before setContentView
     dialog.setViewInternal(dialog.view);
     dialog.checkIfListInitScroll();
 

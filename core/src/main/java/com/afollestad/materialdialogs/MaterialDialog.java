@@ -586,6 +586,7 @@ public class MaterialDialog extends DialogBase
   @Override
   public final void setTitle(CharSequence newTitle) {
     title.setText(newTitle);
+//    super.setTitle(newTitle);
   }
 
   @UiThread

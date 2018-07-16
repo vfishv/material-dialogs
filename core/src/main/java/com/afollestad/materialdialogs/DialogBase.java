@@ -1,5 +1,6 @@
 package com.afollestad.materialdialogs;
 
+import android.app.Dialog;
 import android.support.v7.app.AppCompatDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,7 +10,7 @@ import android.view.ViewGroup;
 import com.afollestad.materialdialogs.internal.MDRootLayout;
 
 /** @author Aidan Follestad (afollestad) */
-class DialogBase extends AppCompatDialog implements DialogInterface.OnShowListener {
+class DialogBase extends Dialog implements DialogInterface.OnShowListener {
 
   protected MDRootLayout view;
   private DialogInterface.OnShowListener showListener;
